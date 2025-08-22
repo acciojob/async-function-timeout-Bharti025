@@ -8,7 +8,7 @@ function display(input1,input2){
  return new Promise(resolve=>{
 	 setTimeout(()=>{
 		 resolve(input1);
-	 },input*1000);
+	 },input2*1000);
  })	
 }
 
