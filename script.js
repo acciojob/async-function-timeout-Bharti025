@@ -16,7 +16,7 @@ async function check(){
 let input1=inputText.value;
 let input2=parseInt(inputNumber.value);
 let data= await display(input1,input2);
-output.innerText=data;
+output.innerText=data + "-" + input2;
 }
 
 btn.addEventListener("click",check);
