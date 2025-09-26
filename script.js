@@ -15,7 +15,13 @@ function display(input1,input2){
 async function check(){
 let input1=inputText.value;
 let input2=parseInt(inputNumber.value);
-if (isNaN(input2) || input2 < 0) {
+
+	if (input1.trim() === "") {
+    output.innerText = "Please enter a message.";
+    return;
+}
+		
+	if (isNaN(input2) || input2 < 0) {
         output.innerText = "Please enter a valid delay time.";
         return;
     }
