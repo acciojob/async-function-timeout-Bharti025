@@ -21,7 +21,7 @@ let input2=parseInt(inputNumber.value);
     return;
 }
 		
-	if (isNaN(input2) || input2 < 0) {
+	if (isNaN(input2) || input2 < 0 || input2==="") {
         output.innerText = "Please enter a valid delay time.";
         return;
     }
