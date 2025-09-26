@@ -17,7 +17,7 @@ let input1=inputText.value;
 let input2=parseInt(inputNumber.value);
 
 	if (input1.trim() === "") {
-    output.innerText = "Please enter a message.";
+    output.innerText = "Test - 1";
     return;
 }
 		
