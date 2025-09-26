@@ -27,5 +27,5 @@ if (isNaN(input2) || input2 < 0) {
         output.innerText = "An error occurred.";
     }
 }
-}
+
 btn.addEventListener("click",check);
