@@ -8,7 +8,7 @@ function display(input1,input2){
  return new Promise((resolve,reject)=>{
 	 setTimeout(()=>{
 		 resolve(input1);
-	 },input2*1000);
+	 },input2);
  });	
 }
 
@@ -16,12 +16,9 @@ async function check(){
 let input1=inputText.value;
 let input2=parseInt(inputNumber.value);
 
-	if (input1.trim() === "") {
-    output.innerText = "Please enter a valid input";
-    return;
-}
+	
 		
-	if (isNaN(input2) || input2 < 0 || input2==="") {
+	if (isNaN(input2) || input2 < 0 ) {
         output.innerText = "Please enter a valid delay time.";
         return;
     }
